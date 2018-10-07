@@ -1,0 +1,57 @@
+.dashicons-cutlery:before {
+	font-family: FontAwesome;
+	content: "\f0f5";
+}
+.dashicons-clock:before {
+	font-family: FontAwesome;
+	content: "\f017";
+}
+#adminmenu #menu-posts-ourteacher .menu-icon-post div.wp-menu-image:before {
+	content: "\f0c0";
+	font-family: FontAwesome;
+}
+
+#adminmenu #menu-posts-testimonial .menu-icon-post div.wp-menu-image:before {
+	content: "\f10d";
+	font-family: FontAwesome;
+}
+
+.wpb_academia_slider_container .wpb_content_element, .wpb_academia_testimonial_ctn .wpb_content_element, .wpb_academia_quotes_ctn .wpb_content_element, .wpb_academia_cover_box_ctn .wpb_content_element
+{
+	min-width: 250px;
+	display: inline-block;
+}
+.vc_element-icon.fa
+{
+	background-image: none;
+	color: #7a508b;
+	font-size: 30px;
+}
+.vc_colored-dropdown .p-color,.vc_colored-dropdown .s-color,.vc_colored-dropdown .t-color  {
+	color: #FFFFFF !important;
+}
+.fip-vc-theme-grey.vc-icons-selector .fip-icons-container .fip-box
+{
+	font-size: 30px !important;
+}
+.fip-vc-theme-grey.vc-icons-selector .fip-icons-container .fip-box .icon,.fip-vc-theme-grey.vc-icons-selector .selected-icon .icon
+{
+	display: inline-block;
+	line-height: 1;
+	margin-left: 0;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+}
+
+.select2-container .select2-choice .select2-arrow b:after{
+    margin-left: -5px !important;
+}
+.vc-icons-selector .selector-category
+{
+	display: none !important;
+}
+
+.select2-container {
+	width:100% !important;
+}

@@ -1,0 +1,141 @@
+.event.style1
+{
+  &.row{
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .height-220{
+    height: 220px;
+  }
+  .height-450{
+    height: 450px;
+  }
+}
+.event-item-isotope
+{
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  &:hover{
+    .event-overlay
+    {
+      opacity: 1;
+    }
+  }
+  .event-item
+  {
+    position: relative;
+    height: 100%;
+  }
+  .event-overlay
+  {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    .transition(all .4s);
+    //.rgba-bg-color(@p_color,0.9);
+    .event-overlay-content
+    {
+      position: absolute;
+      right: 0;
+      bottom: 7%;
+      left: 0;
+      color: #FFFFFF;
+      padding: 20px 20px 0;
+      text-transform: uppercase;
+      h4{
+        font-size: 21px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        line-height: 1.2;
+        a{
+          color: inherit;
+        }
+      }
+      span{
+        padding-left: 0 !important;
+      }
+      .tribe-event-date-start,.tribe-event-date-end
+      {
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .event.style1
+  {
+    .event-item-isotope
+    {
+      img{
+        height: auto;
+      }
+    }
+    .height-450,.height-220{
+      height: auto;
+    }
+  }
+}
+.event.style2{
+  background-color: #F8F8F8;
+  .col-event-image
+  {
+    img{
+      width: 100%;
+    }
+    padding: 0 !important;
+  }
+  .col-event-content
+  {
+    padding: 0 !important;
+    display: table;
+    text-align: center;
+    span{
+      text-transform: uppercase;
+    }
+    h4{
+      font-size: 24px;
+      line-height: 1.2;
+      margin-top: 11px;
+      margin-bottom: 17px;
+    }
+    p{
+      margin-top: 45px;
+    }
+    .tribe-event-date-start,.tribe-event-date-end{
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .content-middle-inner
+  {
+    padding: 20px 20px 70px;
+    height: 100%;
+  }
+  .owl-g5plus-shortcode .owl-controls .owl-dots
+  {
+    position: absolute;
+    left: 0;
+    right: 50%;
+    bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .event.style2
+  {
+    .owl-g5plus-shortcode .owl-controls .owl-dots
+    {
+      right: 0;
+    }
+  }
+}

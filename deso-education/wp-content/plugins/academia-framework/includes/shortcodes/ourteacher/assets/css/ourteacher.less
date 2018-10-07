@@ -1,0 +1,113 @@
+.ourteacher
+{
+  text-align: center;
+  .ourteacher-item {
+    position: relative;
+    .ourteacher-avatar
+    {
+      position: relative;
+      img{
+        width: auto;
+        margin: auto;
+      }
+      > a{
+        display: inline-block;
+        position: relative;
+      }
+      ul
+      {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 30px;
+        padding: 0;
+        opacity: 0;
+        li{
+          display: inline-block;
+          a{
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            color: #ffffff;
+            text-align: center;
+            i{
+              line-height: 30px;
+              font-size: 18px;
+            }
+            &:hover{
+              //background-color: @p_color;
+              color: #ffffff;
+              .border-radius(50%);
+            }
+          }
+        }
+      }
+    }
+    .ourteacher-info
+    {
+      span{
+        display: block;
+      }
+    }
+    &:hover{
+      .ourteacher-avatar
+      {
+        > a:before{
+          content: '';
+          display: block;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          position: absolute;
+          //.rgba-bg-color (@s_color,  0.95);
+          z-index: 1;
+        }
+        ul
+        {
+          a
+          {
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+          }
+          opacity: 1;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+.ourteacher-social
+{
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    a{
+      .transition(all 0.3s);
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      color: #8f8f8f;
+      .border-radius(50%);
+      background-color: #f3f3f3;
+      text-align: center;
+      margin-right: 6px;
+      i{
+        line-height: 34px;
+        font-size: 16px;
+      }
+      &:hover{
+        //background-color: @p_color;
+        color: #ffffff;
+      }
+    }
+  }
+}

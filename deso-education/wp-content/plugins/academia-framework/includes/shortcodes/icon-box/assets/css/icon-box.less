@@ -1,0 +1,264 @@
+.iconbox{
+  &.style1{
+    div{
+      float: left;
+      position: relative;
+      overflow: hidden;
+      .border-radius(50%);
+      width: 99px;
+      height: 99px;
+      i{
+        font-size: 99px;
+      }
+      img{
+        .border-radius(50%);
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .rgba-bg-color(#FFFFFF, 0.5);
+        content: '';
+        .transition(0.6s);
+        .transform(scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, -45deg) translate3d(0, -150%, 0));
+      }
+    }
+    &:hover div:before {
+      .transform(scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, -45deg) translate3d(0, 150%, 0));
+    }
+    a,p{
+      padding-left: 117px;
+      line-height: 1.62;
+    }
+    a{
+      font-size: 18px;
+      padding-bottom: 6px;
+    }
+  }
+  &.style2{
+    div
+    {
+      .border-radius(50%);
+      width: 67px;
+      height: 67px;
+      text-align: center;
+      i{
+        font-size: 35px;
+        line-height: 67px;
+        color: #FFFFFF;
+      }
+      img{
+        .border-radius(50%);
+        width: 67px;
+        height: 67px;
+        display: block;
+      }
+    }
+    a,p{
+      padding-left: 98px;
+    }
+    a{
+      font-size: 21px;
+      padding-bottom: 11px;
+    }
+    &:hover div{
+      -moz-box-shadow:    inset 0 0 8px #FFFFFF;
+      -webkit-box-shadow: inset 0 0 8px #FFFFFF;
+      box-shadow:         inset 0 0 8px #FFFFFF;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      background-color: transparent !important;
+      i{
+        color: inherit !important;
+      }
+    }
+  }
+  &.style3{
+    text-align: center;
+    div{
+      width: 130px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-bottom: 34px;
+      i,img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 42px;
+        .transition(all 0.4s);
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      i{
+        color: #FFFFFF;
+        font-size: 40px;
+      }
+    }
+    a{
+      font-size: 21px;
+    }
+    p{
+      padding-top: 8px;
+    }
+    &:hover div{
+      i,img{
+        bottom: 50%;
+      }
+    }
+  }
+  &.style4{
+    text-align: center;
+    div{
+      margin-bottom: 30px;
+      i{
+        font-size: 60px;
+      }
+      i,img{
+        .transition(all 0.4s);
+      }
+    }
+    p{
+      padding-top: 8px;
+      font-size: 14px;
+    }
+    a{
+      font-size: 21px;
+    }
+    &:hover div{
+      i,img{
+        .scale(1.1);
+      }
+    }
+  }
+  &.style1,&.style2{
+    div
+    {
+      float: left;
+    }
+    a,p{
+      display: block;
+    }
+    &:after{
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+  &.style5,&.style6
+  {
+    div{
+      width: 30px;
+      i{
+        font-size: 16px;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    }
+    a{
+      font-size: 18px;
+    }
+    /*&:hover div i {
+      -webkit-animation-name: hvr-icon-wobble-vertical;
+      animation-name: hvr-icon-wobble-vertical;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }*/
+  }
+  &.style5{
+    text-align: left;
+    div{
+      float: left;
+    }
+  }
+  &.style6{
+    text-align: right;
+    div{
+      float: right;
+    }
+  }
+  &.color-light{
+    a,p,i{
+      color: #FFFFFF;
+    }
+  }
+}
+/* Icon Wobble Vertical */
+@-webkit-keyframes hvr-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes hvr-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

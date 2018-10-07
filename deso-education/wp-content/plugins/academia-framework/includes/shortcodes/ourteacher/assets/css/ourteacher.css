@@ -1,0 +1,109 @@
+.ourteacher {
+  text-align: center;
+}
+.ourteacher .ourteacher-item {
+  position: relative;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar {
+  position: relative;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar img {
+  width: auto;
+  margin: auto;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar > a {
+  display: inline-block;
+  position: relative;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  padding: 0;
+  opacity: 0;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar ul li {
+  display: inline-block;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar ul li a {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar ul li a i {
+  line-height: 30px;
+  font-size: 18px;
+}
+.ourteacher .ourteacher-item .ourteacher-avatar ul li a:hover {
+  color: #ffffff;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+.ourteacher .ourteacher-item .ourteacher-info span {
+  display: block;
+}
+.ourteacher .ourteacher-item:hover .ourteacher-avatar > a:before {
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+.ourteacher .ourteacher-item:hover .ourteacher-avatar ul {
+  opacity: 1;
+  z-index: 2;
+}
+.ourteacher .ourteacher-item:hover .ourteacher-avatar ul a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.ourteacher-social {
+  margin: 0;
+  padding: 0;
+}
+.ourteacher-social li {
+  display: inline-block;
+}
+.ourteacher-social li a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  color: #8f8f8f;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  background-color: #f3f3f3;
+  text-align: center;
+  margin-right: 6px;
+}
+.ourteacher-social li a i {
+  line-height: 34px;
+  font-size: 16px;
+}
+.ourteacher-social li a:hover {
+  color: #ffffff;
+}

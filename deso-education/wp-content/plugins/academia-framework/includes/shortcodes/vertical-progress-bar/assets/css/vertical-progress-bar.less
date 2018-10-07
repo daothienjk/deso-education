@@ -1,0 +1,466 @@
+.v-progress-bar
+{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.v-progress-bar .wpb_progress_bar_heading
+{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.v-progress-bar .vc_single_bar {
+  background: #EEEEEE;
+  background-clip: content-box;
+  position: relative;
+  margin-bottom: 70px;
+  height: 250px;
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.v-progress-bar .vc_single_bar .vc_label
+{
+  position: absolute;
+  bottom: -66px;
+  left: 0;
+  right: 0;
+  color: #444444;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.v-progress-bar .vc_single_bar .vc_label .vc_label_units
+{
+  display: block;
+}
+.v-progress-bar .vc_single_bar .vc_bar {
+  display: block;
+  position: absolute;
+  height: 0;
+  background-clip: content-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: height 1s linear;
+  -moz-transition: height 1s linear;
+  -webkit-transition: height 1s linear;
+  -o-transition: height 1s linear;
+}
+
+.v-progress-bar .vc_single_bar .vc_bar.striped {
+  background-image: -webkit-gradient(linear,0 100%,100% 0,color-stop(.25,rgba(255,255,255,.15)),color-stop(.25,transparent),color-stop(.5,transparent),color-stop(.5,rgba(255,255,255,.15)),color-stop(.75,rgba(255,255,255,.15)),color-stop(.75,transparent),to(transparent));
+  background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: -moz-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  -webkit-background-size: 40px 40px;
+  -moz-background-size: 40px 40px;
+  -o-background-size: 40px 40px;
+  background-size: 40px 40px
+}
+.v-progress-bar .vc_single_bar .vc_bar.animated {
+  -webkit-animation: v-progress-bar-stripes 2s linear infinite;
+  -moz-animation: v-progress-bar-stripes 2s linear infinite;
+  -ms-animation: v-progress-bar-stripes 2s linear infinite;
+  -o-animation: v-progress-bar-stripes 2s linear infinite;
+  animation: v-progress-bar-stripes 2s linear infinite;
+}
+@-webkit-keyframes v-progress-bar-stripes {
+  from {
+    background-position: 40px 0
+  }
+
+  to {
+    background-position: 0 0
+  }
+}
+
+@-moz-keyframes v-progress-bar-stripes {
+  from {
+    background-position: 40px 0
+  }
+
+  to {
+    background-position: 0 0
+  }
+}
+
+@-ms-keyframes v-progress-bar-stripes {
+  from {
+    background-position: 40px 0
+  }
+
+  to {
+    background-position: 0 0
+  }
+}
+
+@-o-keyframes v-progress-bar-stripes {
+  from {
+    background-position: 0 0
+  }
+
+  to {
+    background-position: 40px 0
+  }
+}
+
+@keyframes v-progress-bar-stripes {
+  from {
+    background-position: 40px 0
+  }
+
+  to {
+    background-position: 0 0
+  }
+}
+
+@media (max-width: 991px) {
+  .v-progress-bar .vc_single_bar {
+    width: 25% !important;
+  }
+}
+@media (max-width: 767px) {
+  .v-progress-bar .vc_single_bar {
+    width: 50% !important;
+  }
+}
+@media (max-width: 480px) {
+  .v-progress-bar .vc_single_bar {
+    width: 100% !important;
+  }
+}
+
+.v-progress-bar.vc_progress-bar-color-bar_blue .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_turquoise .vc_bar,.v-progress-bar.vc_progress-bar-color-bar_turquoise .vc_single_bar .vc_bar {
+  background-color: #49afcd
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_blue .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-bar_turquoise .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_green .vc_bar,.v-progress-bar.vc_progress-bar-color-bar_green .vc_single_bar .vc_bar {
+  background-color: #5bb75b
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_turquoise .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-bar_green .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_orange .vc_bar,.v-progress-bar.vc_progress-bar-color-bar_orange .vc_single_bar .vc_bar {
+  background-color: #faa732
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_green .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-bar_orange .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_red .vc_bar,.v-progress-bar.vc_progress-bar-color-bar_red .vc_single_bar .vc_bar {
+  background-color: #da4f49
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_orange .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-bar_red .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_black .vc_bar,.v-progress-bar.vc_progress-bar-color-bar_black .vc_single_bar .vc_bar {
+  background-color: #414141
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_red .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-bar_black .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-blue .vc_bar,.v-progress-bar.vc_progress-bar-color-blue .vc_single_bar .vc_bar {
+  background-color: #5472d2
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-bar_black .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-blue .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-turquoise .vc_bar,.v-progress-bar.vc_progress-bar-color-turquoise .vc_single_bar .vc_bar {
+  background-color: #00c1cf
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-blue .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-turquoise .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-pink .vc_bar,.v-progress-bar.vc_progress-bar-color-pink .vc_single_bar .vc_bar {
+  background-color: #fe6c61
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-turquoise .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-pink .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-violet .vc_bar,.v-progress-bar.vc_progress-bar-color-violet .vc_single_bar .vc_bar {
+  background-color: #8d6dc4
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-pink .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-violet .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-peacoc .vc_bar,.v-progress-bar.vc_progress-bar-color-peacoc .vc_single_bar .vc_bar {
+  background-color: #4cadc9
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-violet .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-peacoc .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-chino .vc_bar,.v-progress-bar.vc_progress-bar-color-chino .vc_single_bar .vc_bar {
+  background-color: #cec2ab
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-peacoc .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-chino .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-mulled-wine .vc_bar,.v-progress-bar.vc_progress-bar-color-mulled-wine .vc_single_bar .vc_bar {
+  background-color: #50485b
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-chino .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-mulled-wine .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-vista-blue .vc_bar,.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-vista_blue .vc_bar,.v-progress-bar.vc_progress-bar-color-vista-blue .vc_single_bar .vc_bar,.v-progress-bar.vc_progress-bar-color-vista_blue .vc_single_bar .vc_bar {
+  background-color: #75d69c
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-mulled-wine .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-vista_blue .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-vista_blue .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-vista-blue .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-black .vc_bar,.v-progress-bar.vc_progress-bar-color-black .vc_single_bar .vc_bar {
+  background-color: #2a2a2a
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-vista-blue .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-black .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-grey .vc_bar,.v-progress-bar.vc_progress-bar-color-grey .vc_single_bar .vc_bar {
+  background-color: #ebebeb
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-black .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-grey .vc_single_bar .vc_label {
+  color: #666;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-orange .vc_bar,.v-progress-bar.vc_progress-bar-color-orange .vc_single_bar .vc_bar {
+  background-color: #f7be68
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-grey .vc_label {
+  color: #666;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-orange .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-sky .vc_bar,.v-progress-bar.vc_progress-bar-color-sky .vc_single_bar .vc_bar {
+  background-color: #5aa1e3
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-orange .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-sky .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-green .vc_bar,.v-progress-bar.vc_progress-bar-color-green .vc_single_bar .vc_bar {
+  background-color: #6dab3c
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-sky .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-green .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-juicy-pink .vc_bar,.v-progress-bar.vc_progress-bar-color-juicy-pink .vc_single_bar .vc_bar {
+  background-color: #f4524d
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-green .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-juicy-pink .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-sandy-brown .vc_bar,.v-progress-bar.vc_progress-bar-color-sandy-brown .vc_single_bar .vc_bar {
+  background-color: #f79468
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-juicy-pink .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-sandy-brown .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-purple .vc_bar,.v-progress-bar.vc_progress-bar-color-purple .vc_single_bar .vc_bar {
+  background-color: #b97ebb
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-sandy-brown .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-purple .vc_single_bar .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-white .vc_bar,.v-progress-bar.vc_progress-bar-color-white .vc_single_bar .vc_bar {
+  background-color: #fff
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-purple .vc_label {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar.vc_progress-bar-color-white .vc_single_bar .vc_label {
+  color: #666;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+
+.v-progress-bar .vc_general.vc_single_bar.vc_progress-bar-color-white .vc_label {
+  color: #666;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}

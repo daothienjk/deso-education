@@ -1,0 +1,47 @@
+.partner-carousel .owl-item {
+  position: relative;
+  height: 140px;
+}
+.partner-carousel img {
+  opacity: 0.8;
+  width: auto !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.partner-carousel img:hover {
+  opacity: 1 !important;
+}
+.partner-carousel.opacity100 img {
+  opacity: 1;
+}
+.partner-carousel.opacity90 img {
+  opacity: 0.9;
+}
+.partner-carousel.opacity80 img {
+  opacity: 0.8;
+}
+.partner-carousel.opacity70 img {
+  opacity: 0.7;
+}
+.partner-carousel.opacity60 img {
+  opacity: 0.6;
+}
+.partner-carousel.opacity50 img {
+  opacity: 0.5;
+}
+.partner-carousel.opacity40 img {
+  opacity: 0.4;
+}
+.partner-carousel.opacity30 img {
+  opacity: 0.3;
+}
+.partner-carousel.opacity20 img {
+  opacity: 0.2;
+}
+.partner-carousel.opacity10 img {
+  opacity: 0.1;
+}

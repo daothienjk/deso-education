@@ -1,0 +1,48 @@
+.expandable-button {
+  display: block;
+  margin: 0;
+  padding: 39px 15px 39px;
+  color: #444444;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  &:hover
+  {
+    color: #00B960;
+  }
+  &.left {
+    text-align: left;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
+  }
+  span,i{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  i {
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    -moz-transition: -moz-transform 300ms ease-in-out;
+    -ms-transition: -ms-transform 300ms ease-in-out;
+    -o-transition: -o-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    margin-right: 12px;
+    font-size: 44px;
+    &.rotate-arrow {
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+  }
+}

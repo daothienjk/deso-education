@@ -1,0 +1,57 @@
+.testimonial
+{
+  &.color-light
+  {
+    p,span{
+      color: #ffffff;
+    }
+  }
+  .testimonial-item
+  {
+    text-align: center;
+    p{
+      padding-bottom: 14px;
+      font-size: 18px;
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    span,p{
+      font-weight: 500;
+    }
+    h4,span{
+      text-transform: uppercase;
+    }
+    h4{
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
+  &.style1
+  {
+    .fotorama__thumb-border
+    {
+      border: 0;
+      background: transparent;
+    }
+    .fotorama__thumb
+    {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      opacity: 0.3;
+      background-color: transparent;
+    }
+    .fotorama__active .fotorama__thumb
+    {
+      opacity: 1;
+    }
+  }
+  &.style2{
+    padding-bottom: 40px;
+    .testimonial-item
+    {
+      padding-bottom: 10px;
+    }
+  }
+}

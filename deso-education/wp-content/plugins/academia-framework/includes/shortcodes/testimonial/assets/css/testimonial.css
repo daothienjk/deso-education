@@ -1,0 +1,46 @@
+.testimonial.color-light p,
+.testimonial.color-light span {
+  color: #ffffff;
+}
+.testimonial .testimonial-item {
+  text-align: center;
+}
+.testimonial .testimonial-item p {
+  padding-bottom: 14px;
+  font-size: 18px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial .testimonial-item span,
+.testimonial .testimonial-item p {
+  font-weight: 500;
+}
+.testimonial .testimonial-item h4,
+.testimonial .testimonial-item span {
+  text-transform: uppercase;
+}
+.testimonial .testimonial-item h4 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.testimonial.style1 .fotorama__thumb-border {
+  border: 0;
+  background: transparent;
+}
+.testimonial.style1 .fotorama__thumb {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: transparent;
+}
+.testimonial.style1 .fotorama__active .fotorama__thumb {
+  opacity: 1;
+}
+.testimonial.style2 {
+  padding-bottom: 40px;
+}
+.testimonial.style2 .testimonial-item {
+  padding-bottom: 10px;
+}

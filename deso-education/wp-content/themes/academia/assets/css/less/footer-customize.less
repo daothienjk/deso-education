@@ -1,0 +1,195 @@
+.footer-main-border-color when (lightness(@footer_bg_color) > 60) {
+	border-color: darken(@footer_bg_color, 7%) !important;
+}
+.footer-main-border-color when (lightness(@footer_bg_color) <= 60) {
+	border-color: lighten(@footer_bg_color, 7%) !important;
+}
+
+
+.footer-above-border-color when (lightness(@footer_above_bg_color) > 60) {
+	border-color: darken(@footer_above_bg_color, 7%) !important;
+}
+.footer-above-border-color when (lightness(@footer_above_bg_color) <= 60) {
+	border-color: lighten(@footer_above_bg_color, 7%) !important;
+}
+
+
+.bottom-bar-border-color when (lightness(@bottom_bar_bg_color) > 60) {
+	border-color: darken(@bottom_bar_bg_color, 7%) !important;
+}
+.bottom-bar-border-color when (lightness(@bottom_bar_bg_color) <= 60) {
+	border-color: lighten(@bottom_bar_bg_color, 7%) !important;
+}
+
+
+.main-footer-wrapper {
+	position: relative;
+	background-color: rgba(red(@footer_bg_color), green(@footer_bg_color), blue(@footer_bg_color), @footer_bg_color_opacity);
+
+	.widget-title {
+		color: @footer_heading_text_color;
+	}
+
+	// CONTACT FORM 7
+	.wpcf7-form {
+		input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="password"], input[type="tel"], textarea, select {
+			&:extend(.footer-main-border-color);
+			&:focus {
+				border-color: @p_color !important;
+			}
+		}
+	}
+	// MAILCHIMP
+	.mc4wp-form {
+		input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="password"], input[type="tel"], textarea, select {
+			&:extend(.footer-main-border-color);
+		}
+	}
+	// FOOTER CONTACT INFO
+	.footer-contact-info {
+		i.fa, i.micon {
+			color: @p_color;
+		}
+	}
+
+	// FOOTER LOGO LINE
+	.footer-logo-line {
+		.footer-logo when(lightness(@bottom_bar_bg_color) > 30) {
+			a:before,
+			a:after {
+				border-top: solid 1px rgba(0,0,0, 0.1);
+			}
+		}
+		.footer-logo when(lightness(@bottom_bar_bg_color) <= 30) {
+			a:before,
+			a:after {
+				border-top: solid 1px rgba(255,255,255, 0.2);
+			}
+		}
+	}
+
+
+	#wp-calendar tbody td:hover a,
+	#wp-calendar tbody td:hover {
+		color: @p_color;
+	}
+
+
+
+	.widget-course .course-item-wrap .course-info > a.course-title,
+	.widget.woocommerce .course-item-wrap .course-info > a.course-title {
+		color: @footer_heading_text_color;
+	}
+
+
+	.widget-posts {
+		.widget-posts-title {
+			color: @footer_heading_text_color;
+		}
+	}
+
+	h3.entry-post-title {
+		color: @footer_heading_text_color;
+	}
+
+
+	.footer-above-wrapper {
+		background-color: rgba(red(@footer_above_bg_color), green(@footer_above_bg_color), blue(@footer_above_bg_color), @footer_above_bg_color_opacity);
+		color: @footer_above_text_color;
+		.footer-above-inner {
+			padding-top: @footer_above_padding_top;
+			padding-bottom: @footer_above_padding_bottom;
+			&:extend(.footer-above-border-color);
+		}
+
+
+		input[type="text"],
+		input[type="search"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select {
+			color: @footer_above_text_color;
+			&:extend(.footer-above-border-color);
+			background-color: transparent;
+		}
+
+		.search-form button {
+			color: @footer_above_text_color;
+		}
+
+		#wp-calendar tbody td {
+			&:extend(.footer-above-border-color);
+		}
+	}
+
+
+	.main-footer {
+		background-color: rgba(red(@footer_main_overlay_color), green(@footer_main_overlay_color), blue(@footer_main_overlay_color), @footer_main_overlay_opacity);
+		color: @footer_text_color;
+		.footer_inner {
+			padding-top: @footer_padding_top;
+			padding-bottom: @footer_padding_bottom;
+		}
+
+		input[type="text"],
+		input[type="search"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select {
+			color: @footer_text_color;
+			&:extend(.footer-main-border-color);
+		}
+
+		.search-form button {
+			color: @footer_text_color;
+		}
+		#wp-calendar tbody td {
+			&:extend(.footer-main-border-color);
+		}
+		.tagcloud a {
+			color: @footer_text_color;
+			&:extend(.footer-main-border-color);
+		}
+
+	}
+
+
+	.bottom-bar-wrapper {
+		background-color: rgba(red(@bottom_bar_bg_color), green(@bottom_bar_bg_color), blue(@bottom_bar_bg_color), @bottom_bar_bg_color_opacity);
+		color: @bottom_bar_text_color;
+		.bottom-bar-inner {
+			padding-top: @bottom_bar_padding_top;
+			padding-bottom: @bottom_bar_padding_bottom;
+			&:extend(.bottom-bar-border-color);
+		}
+
+		input[type="text"],
+		input[type="search"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select {
+			color: @bottom_bar_text_color;
+			&:extend(.bottom-bar-border-color);
+		}
+
+		.search-form button {
+			color: @bottom_bar_text_color;
+		}
+
+		#wp-calendar tbody td {
+			&:extend(.bottom-bar-border-color);
+		}
+	}
+}

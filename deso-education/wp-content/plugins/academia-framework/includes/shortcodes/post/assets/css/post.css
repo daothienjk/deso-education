@@ -1,0 +1,51 @@
+.a-post .post-image {
+  position: relative;
+}
+.a-post .post-image img {
+  width: 100%;
+  height: auto;
+}
+.a-post .post-image div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #FFFFFF;
+}
+.a-post .post-image div p,
+.a-post .post-image div span {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+.a-post .post-image div span {
+  padding: 6px 20px;
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  left: 58px;
+  max-height: 58px;
+}
+.a-post .post-image div p {
+  display: block;
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  font-size: 28px;
+  left: 0;
+}
+.a-post .post-content {
+  padding: 25px 20px;
+}
+.a-post .post-content h3 {
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+.a-post .post-content p {
+  margin-bottom: 18px;
+}
+.a-post .post-item {
+  background-color: #f8f8f8;
+  min-height: 270px;
+}

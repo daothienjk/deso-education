@@ -1,0 +1,1 @@
+!function(a){"use strict";var e={init:function(){a(".course-search.advance").each(function(){var e=a(this).attr("data-bg");console.log(e),""!=e&&a(this).append("<style>.course-search.advance::after{background-image:url("+e+")}</style>")})}};a(document).ready(function(){e.init()})}(jQuery);
